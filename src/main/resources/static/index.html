@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8"/>
+    <title>Prím</title>
+    <link rel="stylesheet" href="a.css">
+</head>
+<body>
+<div class="frame">
+    <div class="forms">
+        <h1>Prím keresés</h1>
+        <div class="form">
+            <h2>Szolgáltatás indítása</h2>
+            <label for="count">Processek száma</label><br>
+            <input type="number" id="count" name="count" value="2" min="-10" max="256">
+            <button id="start">indítása</button>
+        </div>
+        <div class="form">
+            <h2>Szolgáltatás leállítása</h2>
+            <button id="stop">leállítása</button>
+        </div>
+        <div class="form">
+            <h2>Prím lista indítása</h2>
+            <label for="from">Intervallum eleje</label><br>
+            <input id="from" name="from" value="1000">
+            <label for="to">Intervallum vége</label><br>
+            <input id="to" name="to" value="10000">
+            <button id="get">lista</button>
+        </div>
+    </div>
+    <div id="out">
+    </div>
+
+</div>
+<script src="a.js"></script>
+</body>
+</html>

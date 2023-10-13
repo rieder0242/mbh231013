@@ -1,0 +1,80 @@
+.body {
+    margin: 0;
+    padding: 1ch;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, button {
+    margin-top: .5em;
+}
+
+.form, #out > * {
+    border: 1px solid;
+    padding: 1ch;
+    border-radius: 1ch;
+}
+
+#out {
+    display: flex;
+    flex-direction: column;
+    gap: 1ch;
+    flex-grow: 1;
+}
+
+.date {
+    color: #333;
+    background: #aaa;
+}
+
+.fail {
+    color: #f00;
+    background: #fdd;
+}
+
+.success {
+    color: #0F0;
+    background: #dfd;
+}
+
+.url {
+    color: #00F;
+    background: #ddf;
+}
+
+.json {
+    font-family: monospace;
+    white-space: pre;
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 104ch) {
+    .frame {
+        flex-direction: row;
+    }
+
+    .form {
+        width: 50ch;
+    }
+
+    #out {
+        max-height: calc(100vh - 2ch);
+        overflow: scroll;
+    }
+}
